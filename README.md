@@ -11,3 +11,8 @@ The repository is structured as follows:
 - <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linux.svg" width="24" height="24" /> **Linux/**: Contains Linux-specific scripts and configuration files.
   - **scripts/**: Contains scripts to automate system configuration and customization.
   - **config/**: Contains configuration files for various applications and tools.
+ 
+## Disclaimer
+
+Please be mindful that not everyone will use the same setup as me, and that doesn't mean that it's wrong or better! 
+What works for me works for me, and what works for you works for you 😄
