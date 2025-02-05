@@ -1,0 +1,7 @@
+alias codium="flatpak run com.vscodium.codium-insiders "
+alias code=codium
+alias restart="exec bash"
+alias cls=clear
+alias ep="code $HOME/.bashrc"
+alias supdate="sudo dnf update && sudo flatpak update"
+alias editdots="cd $HOME/Documents/dotfiles-like/Fedora/ && code ."
