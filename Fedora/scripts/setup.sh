@@ -16,6 +16,12 @@ sudo systemctl restart systemd-resolved
 sudo systemctl restart NetworkManager
 resolvectl status
 
+# Install gnome extensions
+sudo flatpak install org.gnome.Extensions
+
+## Set common button layout
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
 # Install tray icons extension
 sudo dnf install libappindicator-gtk3 gnome-shell-extension-appindicator gnome-extensions-app
 
@@ -27,6 +33,7 @@ sudo dnf install gh --repo gh-cli
 # Essentials
 sudo flatpak install syncthingy
 sudo flatpak install librewolf
+sudo flatpak install com.vscodium.codium-insiders
 
 ## Proton VPN
 wget "https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d' ' -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.2-1.noarch.rpm"
