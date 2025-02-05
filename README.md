@@ -5,13 +5,13 @@ Here, you'll find my custom configurations and scripts to automate system setup 
 
 The repository is structured as follows:
 
-- <img width="24" height="24" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/refs/heads/master/images/svg/windows.svg" alt="windows"/> **Windows/**: Contains Windows-specific scripts and configuration files.
+- <img width="25" height="25" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/refs/heads/master/images/svg/windows.svg" alt="windows"/> **Windows/**: Contains Windows-specific scripts and configuration files.
   - **scripts/**: Contains scripts to automate system configuration and customization.
   - **config/**: Contains configuration files for various applications and tools.
-- <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/refs/heads/master/images/svg/endeavouros.svg" width="24" height="24" /> **Linux/**: Contains Linux-specific scripts and configuration files.
+- <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/refs/heads/master/images/svg/linux.svg" width="25" height="25" /> **Linux/**: Contains Linux-specific scripts and configuration files.
   - **scripts/**: Contains scripts to automate system configuration and customization.
   - **config/**: Contains configuration files for various applications and tools.
-- <img width="24" height="24" src="https://img.icons8.com/pulsar-color/48/pictures-folder.png" alt="pictures-folder"/> **Assets/**: Contains assets (wallpapers, profile pictures, etc.) that are used in both systems.
+- <img width="25" height="25" src="https://img.icons8.com/pulsar-color/48/pictures-folder.png" alt="pictures-folder"/> **Assets/**: Contains assets (wallpapers, profile pictures, etc.) that are used in both systems.
 ## Disclaimer
 
 Please be mindful that not everyone will use the same setup as me, and that doesn't mean that it's wrong or better! 
