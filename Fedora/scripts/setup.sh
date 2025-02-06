@@ -33,6 +33,7 @@ sudo dnf install gh --repo gh-cli
 # Essentials
 sudo flatpak install syncthingy
 sudo flatpak install librewolf
+sudo flatpak install app.zen_browser.zen
 sudo flatpak install com.vscodium.codium-insiders
 
 ## Mullvad VPN
