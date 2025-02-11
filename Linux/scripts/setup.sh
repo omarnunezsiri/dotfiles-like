@@ -14,21 +14,32 @@ sudo apt update && sudo apt-upgrade
 	&& sudo apt install gh -y
 
 # Essentials
-# sudo flatpak install syncthingy
-# sudo flatpak install librewolf
-# sudo flatpak install app.zen_browser.zen
-# sudo flatpak install com.vscodium.codium-insiders
+curl -fsS https://dl.brave.com/install.sh | sh
 
-## Mullvad VPN
+## VSCodium
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+
+sudo apt update && sudo apt install codium
+
+## Mullvad
 sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc https://repository.mullvad.net/deb/mullvad-keyring.asc
 
 echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc arch=$( dpkg --print-architecture )] https://repository.mullvad.net/deb/stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/mullvad.list
 
-sudo apt update && sudo apt install mullvad-vpn
+sudo apt update && sudo apt install mullvad-vpn && sudo apt install mullvad-browser
 
 # Entertainment
-# sudo flatpak install spotify
-# sudo flatpak install freetube
+
+## Spotify
+curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo apt-get update && sudo apt-get install spotify-client
 
 # Social
 wget https://vencord.dev/download/vesktop/amd64/deb && sudo dpkg -i vesktop_numbers_amd64.deb # replace with actual version num
